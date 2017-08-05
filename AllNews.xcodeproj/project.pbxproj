@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE43DC861F3539660098F876 /* NewDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE43DC851F3539660098F876 /* NewDetailsViewController.swift */; };
+		BE43DC881F35424A0098F876 /* NewDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE43DC871F35424A0098F876 /* NewDetailsTableViewCell.swift */; };
+		BE43DC8A1F35460B0098F876 /* CustomTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE43DC891F35460B0098F876 /* CustomTableHeaderView.swift */; };
 		BE5D6A5C1F28EB66009B233B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5D6A5B1F28EB66009B233B /* AppDelegate.swift */; };
 		BE5D6A5E1F28EB66009B233B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5D6A5D1F28EB66009B233B /* ViewController.swift */; };
 		BE5D6A611F28EB66009B233B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE5D6A5F1F28EB66009B233B /* Main.storyboard */; };
@@ -24,6 +27,9 @@
 
 /* Begin PBXFileReference section */
 		919131A9054C4B6862401545 /* Pods_AllNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AllNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE43DC851F3539660098F876 /* NewDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewDetailsViewController.swift; sourceTree = "<group>"; };
+		BE43DC871F35424A0098F876 /* NewDetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		BE43DC891F35460B0098F876 /* CustomTableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableHeaderView.swift; sourceTree = "<group>"; };
 		BE5D6A581F28EB66009B233B /* AllNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5D6A5B1F28EB66009B233B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE5D6A5D1F28EB66009B233B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +77,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		BE43DC8B1F3546110098F876 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				BE43DC891F35460B0098F876 /* CustomTableHeaderView.swift */,
+			);
+			name = CustomUI;
+			sourceTree = "<group>";
+		};
 		BE5D6A4F1F28EB66009B233B = {
 			isa = PBXGroup;
 			children = (
@@ -92,10 +106,12 @@
 		BE5D6A5A1F28EB66009B233B /* AllNews */ = {
 			isa = PBXGroup;
 			children = (
+				BE43DC8B1F3546110098F876 /* CustomUI */,
 				BE5D6A761F28FE40009B233B /* Models */,
 				BE5D6A6D1F28F713009B233B /* CustomCell */,
 				BE5D6A5B1F28EB66009B233B /* AppDelegate.swift */,
 				BE5D6A5D1F28EB66009B233B /* ViewController.swift */,
+				BE43DC851F3539660098F876 /* NewDetailsViewController.swift */,
 				BE5D6A5F1F28EB66009B233B /* Main.storyboard */,
 				BE5D6A621F28EB67009B233B /* Assets.xcassets */,
 				BE5D6A641F28EB67009B233B /* LaunchScreen.storyboard */,
@@ -112,6 +128,7 @@
 				BE5D6A6F1F28F737009B233B /* LargeTableViewCell.xib */,
 				BE5D6A721F28F74C009B233B /* MediumTableViewCell.swift */,
 				BE5D6A731F28F74C009B233B /* MediumTableViewCell.xib */,
+				BE43DC871F35424A0098F876 /* NewDetailsTableViewCell.swift */,
 			);
 			name = CustomCell;
 			sourceTree = "<group>";
@@ -250,11 +267,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE43DC861F3539660098F876 /* NewDetailsViewController.swift in Sources */,
+				BE43DC881F35424A0098F876 /* NewDetailsTableViewCell.swift in Sources */,
 				BE5D6A741F28F74C009B233B /* MediumTableViewCell.swift in Sources */,
 				BE5D6A7F1F296B2B009B233B /* PlayVideoViewController.swift in Sources */,
 				BE5D6A791F28FE54009B233B /* Articles.swift in Sources */,
 				BE5D6A5E1F28EB66009B233B /* ViewController.swift in Sources */,
 				BE5D6A5C1F28EB66009B233B /* AppDelegate.swift in Sources */,
+				BE43DC8A1F35460B0098F876 /* CustomTableHeaderView.swift in Sources */,
 				BE5D6A701F28F737009B233B /* LargeTableViewCell.swift in Sources */,
 				BE5D6A7A1F28FE54009B233B /* News.swift in Sources */,
 			);

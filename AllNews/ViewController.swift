@@ -109,6 +109,7 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource {
             let cell = Bundle.main.loadNibNamed("MediumTableViewCell", owner: nil, options: nil)?.first as! MediumTableViewCell
             cell.descLbl.text = article?.description
             
+            
             let url = URL(string: (article?.urlToImage)!)
             
             DispatchQueue.global().async {
@@ -128,9 +129,17 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let payvideoVC = self.storyboard?.instantiateViewController(withIdentifier: "playVD") as! PlayVideoViewController
-        payvideoVC.videoUrl = "http://www.html5videoplayer.net/videos/toystory.mp4"
-        self.present(payvideoVC, animated: true, completion: nil)
+        if(indexPath.row == 0) {
+            let payvideoVC = self.storyboard?.instantiateViewController(withIdentifier: "playVD") as! PlayVideoViewController
+            payvideoVC.videoUrl = "http://www.html5videoplayer.net/videos/toystory.mp4"
+            self.present(payvideoVC, animated: true, completion: nil)
+            } else {
+            let article = news.articles?[indexPath.row]
+            let newsVC = self.storyboard?.instantiateViewController(withIdentifier: "NewsDet") as! NewDetailsViewController
+            newsVC.article = article
+            self.present(newsVC, animated: true, completion: nil)
+        
+        }
         
     }
     
